@@ -12,6 +12,6 @@ public class FirstRESTcontroller {
     //@ResponseBody
     @GetMapping("/seyHello")
     public String sayHello() {
-        return "hello world my new project good job";
+        return "hello world my new project";
     }
 }
