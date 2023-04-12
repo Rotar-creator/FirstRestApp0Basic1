@@ -110,12 +110,12 @@ public class PeopleController {
         return person;
     }
 
-/*    //метод обогащения данных персона
+    //метод обогащения данных персона
     private void enrichPerson(Person person) {
         person.setCreatedAt(LocalDateTime.now());
         person.setUpdatedAt(LocalDateTime.now());
         person.setCreatedWho("ADMIN");
-    }*/
+    }
 
     private PersonDTO converToPersonDTO(Person person) {
         return modelMapper.map(person, PersonDTO.class);
