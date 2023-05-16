@@ -101,12 +101,12 @@ public class PeopleController {
         //оздаем мапер для быстрого преобразования дто класса с основным классом
         /*ModelMapper modelMapper = new ModelMapper();*/
         // берем дто и мапин с основным классом
-        Person person = modelMapper.map(personDTO, Person.class);
+      //  Person person = modelMapper.map(personDTO, Person.class);
 
-/*        Person person = new Person();
-        person.setName(personDTO.getName());
+        Person person = new Person();
+        person.setName(personDTO.getName()+" Name");
         person.getAge(personDTO.getAge());
-        person.setEmail(personDTO.getEmail());*/
+        person.setEmail(personDTO.getEmail());
         return person;
     }
 
